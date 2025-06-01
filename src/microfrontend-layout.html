@@ -1,0 +1,24 @@
+<div id="main">
+  <single-spa-router>
+    <div id="sidebar">
+      <button onclick="toggleSidebar()" style="margin-bottom: 1rem;">◀</button>
+      <nav id="menu-links">
+        <a href="/dashboard">📊 <span class="link-text">Dashboard</span></a>
+        <a href="/profile">👤 <span class="link-text">Profile</span></a>
+        <a href="/settings">⚙️ <span class="link-text">Settings</span></a>
+      </nav>
+    </div>
+    <main>
+      <route path="/dashboard">
+        <application name="@dissertation/dashboard-shell"></application>
+      </route>
+      <route path="/profile">
+        <application name="@dissertation/user-profile"></application>
+      </route>
+      <route path="/settings">
+        <application name="@dissertation/settings-app"></application>
+      </route>
+    </main>
+  </single-spa-router>
+</div>
+</div>
