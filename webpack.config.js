@@ -30,6 +30,10 @@ module.exports = (webpackConfigEnv, argv) => {
           {
             from: path.resolve(__dirname, 'public/root.css'),
             to: 'root.css' // Output path in dist
+          },
+          {
+            from: path.resolve(__dirname, 'src/importmap.json'),
+            to: 'importmap.json'
           }
         ]
       })
