@@ -1,0 +1,36 @@
+name: Deploy to Azure Blob Storage $web (Main Shell App). This will be hosted as azure static web app that serves $web files in storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the app
+      run: npm run build:webpack
+
+    - name: Upload to Azure Blob Storage $web
+      uses: azure/cli@v1
+      with:
+        inlineScript: |
+          az storage blob upload-batch \
+            --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+            --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
+            -s dist \
+            -d '$web' \
+            --overwrite
