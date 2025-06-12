@@ -1,9 +1,9 @@
 # Azure Deployment
 ## Azure storage displaying micro app containers. 
-![Microfrontend Architecture](./images/storage-mfe-container.png)
+![Microfrontend Architecture](./images/azurestorage-mfe-container.png)
 
 ## Azure storage displaying shell App files. 
-![Microfrontend Architecture](./images/shell-App-upload.png)
+![Microfrontend Architecture](./images/shell-App-uploaded.png)
 
 ## Github secrets added for all micro apps using access keys from storage account.
 ![Microfrontend Architecture](./images/github-secrets.png)
@@ -21,5 +21,5 @@
 ![Microfrontend Architecture](./images/deploy-pipeline-success.png)
 
 ## upload to azure storage container using deploy.yml of settings-app, after Github actions deployed successfully.
-![Microfrontend Architecture](./images/settings-upload-dist.png)
+![Microfrontend Architecture](./images/settings-uploaded-dist.png)
 
