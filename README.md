@@ -1,6 +1,6 @@
 # Shell Microfrontend App
 
-This is the root microfrontend that loads all other apps using single-spa.
+This is the root app that loads all other microapps using Single-Spa.
 
 ## 🔍 Docs
 
