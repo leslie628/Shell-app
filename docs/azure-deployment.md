@@ -20,6 +20,6 @@
 ## Deploy actions for micro app success.
 ![Microfrontend Architecture](./images/deploy-pipeline-success.png)
 
-## upload to azure storage container using deploy.yml of settings-app, after Github actions deployed successfully.
+## After Github actions deployed successfully using respective deploy.yml, files uploaded to azure storage respective container.
 ![Microfrontend Architecture](./images/settings-uploaded-dist.png)
 
