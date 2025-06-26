@@ -1,7 +1,7 @@
 {
     "imports": {
         "@test/root-config": "https://storagefrontendapps.z33.web.core.windows.net/test-root-config.js",
-        "@test/auth-mfe": "https://storagefrontendapps.blob.core.windows.net/dashboard-app/test-auth-mfe.js",
+        "@dissertation/auth-app": "https://storagefrontendapps.blob.core.windows.net/auth-app/dissertation-auth-app.js",
         "@dissertation/dashboard-shell": "https://storagefrontendapps.blob.core.windows.net/dashboard-shell/dissertation-dashboard-shell.js",
         "@dissertation/dashboard-app": "https://storagefrontendapps.blob.core.windows.net/dashboard-app/dissertation-dashboard-app.js",
         "@dissertation/user-profile": "https://storagefrontendapps.blob.core.windows.net/profile-app/dissertation-user-profile.js",

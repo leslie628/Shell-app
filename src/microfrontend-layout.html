@@ -1,6 +1,9 @@
 <div id="main">
   <single-spa-router>
-    <div id="sidebar">
+    <route path="/auth">
+      <application name="@dissertation/auth-app"></application>
+    </route>
+    <div id="sidebar" style="display: none;">
       <button onclick="toggleSidebar()" style="margin-bottom: 1rem;">◀</button>
       <nav id="menu-links">
         <a href="/dashboard">📊 <span class="link-text">Dashboard</span></a>
