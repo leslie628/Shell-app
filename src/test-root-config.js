@@ -30,7 +30,12 @@ function toggleSidebar() {
   const token = localStorage.getItem('token');
   const sidebar = document.getElementById('sidebar');
   if (!sidebar) return;
- sidebar.style.display = token ? 'block' : 'none';
+  sidebar.style.display = token ? 'block' : 'none';
+}
+
+window.logout = function () {
+  localStorage.removeItem('token');
+  window.location.href = '/auth';
 }
 
 toggleSidebar();
@@ -73,7 +78,7 @@ function redirectAfterLogin() {
 
   if (token && currentPath === '/auth') {
     window.history.replaceState(null, '', '/settings');
-     // notify single spa router to load settings micro app
+    // notify single spa router to load settings micro app
     window.dispatchEvent(new PopStateEvent('popstate'));
   }
 }
