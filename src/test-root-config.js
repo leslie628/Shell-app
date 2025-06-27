@@ -45,7 +45,7 @@ window.addEventListener('storage', (event) => { //listen browser application sto
 });
 
 window.addEventListener('auth-success', () => {
-  toggleSidebarVisibility();
+  toggleSidebar();
   const currentPath = window.location.pathname;
   if (currentPath === '/auth') {
     window.history.replaceState(null, '', '/settings');
