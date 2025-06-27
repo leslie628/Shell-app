@@ -21,5 +21,5 @@ steps:
 - script: npm run build:webpack
   displayName: 'Build the shell container app'
 
-- script: az storage blob upload-batch --account-name $(AZURE_STORAGE_ACCOUNT) --account-key $(AZURE_STORAGE_KEY) -s dist -d $web --overwrite
+- script: az storage blob upload-batch --account-name $(AZURE_STORAGE_ACCOUNT) --account-key $(AZURE_STORAGE_KEY) -s dist -d "$web" --overwrite
   displayName: 'Upload Shell app dist to $web'
