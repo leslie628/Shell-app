@@ -3,6 +3,7 @@ const singleSpaDefaults = require("webpack-config-single-spa");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
+const { webpack } = require("webpack");
 
 module.exports = (webpackConfigEnv, argv) => {
   const orgName = "test";
@@ -36,7 +37,10 @@ module.exports = (webpackConfigEnv, argv) => {
             to: 'importmap.json'
           }
         ]
-      })
+      }),
+       new webpack.DefinePlugin({
+      'process.env.REACT_APP_AUTH_API': JSON.stringify(process.env.REACT_APP_AUTH_API)
+    }),
     ],
   });
 };

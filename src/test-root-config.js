@@ -39,7 +39,8 @@ window.logout = function () {
 }
 
 toggleSidebar();
-
+const authApiUrl = process.env.REACT_APP_AUTH_API;
+console.log('leslie',authApiUrl);
 // Hide/ display side bar based on token -> if login is successfully then only show side bar and micro apps else redirect to auth login micro app
 window.addEventListener('storage', (event) => { //listen browser application storage change
   if (event.key === 'token') {
