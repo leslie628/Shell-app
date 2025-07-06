@@ -14,7 +14,7 @@
 ## Micro app automated deploy actions config using the secrets.
 ![Microfrontend Architecture](./images/github-deploy-config.png)
 
-## Shell app automated deploy actions config (hosted as static web app).
+## Shell app automated deploy actions config (hosted as static website $web).
 ![Microfrontend Architecture](./images/shell-deploy-production.png)
 
 ## Deploy actions for micro app success.
