@@ -5,7 +5,7 @@
 ## Shell app azure pipeline.
 ![Microfrontend Architecture](./images/shell-app-pipeline-azure.png)
 
-## Azure storage displaying shell App files (hosted as static website $web). 
+## Azure storage displaying shell App files (hosted as static website $web). Routes.json and importmap.json are the configuration files for adding new micro apps 
 ![Microfrontend Architecture](./images/shell-App-uploaded.png)
 
 ## Azure pipeline variables added for all micro apps using access keys from storage account.
